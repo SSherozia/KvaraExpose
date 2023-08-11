@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-color: orange;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .background-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font-size: 50px; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: red;
+    border: 5px solid red;
+    padding: 10px 20px;
+    border-radius: 50px;
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  .text {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .download-link {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  .download-link:hover {
+    background-color: #e65100;
+  }
+</style>
+<script>
+  window.onload = function() {
+    document.querySelector('.overlay').style.display = 'flex';
+  }
+</script>
+</head>
+<body>
+
+<div class="background-text">KvaraExposed</div>
+
+<div class="overlay">
+  <div class="container">
+    <div class="content">
+      <p class="text">Kvaras Config</p>
+      <a class="ClickToDownload" href="https://www.mediafire.com/file/y4mmlg7ibzzh309/KvarasNabozrobebi.zip/file" download>Download File</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
